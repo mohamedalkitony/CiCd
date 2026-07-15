@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - 'main'
+      - 'releases/**'
+
+jobs:
+  test-job:                       # هنا سمينا الـ job أي اسم (مثلاً test-job) من غير ناقص
+    runs-on: ubuntu-latest        # صلحنا اسم الأوبونتو (تنتهي بـ latest بدون s)
+    steps:
+      - name: Run echo command    # ضفنا ناقص قبل الخطوة، وعطيناها اسم توضيحي
+        run: echo "Hello World" 
+      - name: checkout code
+        uses: actions/checkout@v7.0.0
