@@ -1,0 +1,17 @@
+on:
+  push:
+    - main
+    - 'release/**'
+  pull_requsest:
+    - main
+    - 'release/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: chechout code
+        uses: actions/checkout@7.0.0
+      - name: npm test
+        run: npm test
+
