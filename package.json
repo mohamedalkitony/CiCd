@@ -1,0 +1,12 @@
+{
+  "name": "great-function-project",
+  "version": "1.0.0",
+  "description": "مشروع بسيط لاختبار دالة الترحيب",
+  "main": "great.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "bash test.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
