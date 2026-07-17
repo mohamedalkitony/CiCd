@@ -1,6 +1,6 @@
 
 function great(name){
-    console.log("Hello " + name);
+    console.log("Hello  wored" + name);
     return `Hello ${name}`
 } ;
 
